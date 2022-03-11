@@ -179,7 +179,7 @@ If you then power up the Mantis, it will flash the file automatically.
 
 Unfortunately the Mantis FMU (Flight Management Unit) can't write to the SD card directly. The actual logging is being done via Camera processor (to which FMU streams the log), which is hard-coded to log from when the vehicle is armed, until it's disarmed.
 
-Therefore, currently there is no way for a user to control how the logging should behave, and changes in the SD card logging mode will not take into affect. And the `logger` module won't behave as in normal PX4 Vehicles (You can't manually start logging via `logger on` for example).
+Therefore, currently there is no way for a user to control how the logging should behave, and changes in the SD card logging mode (`param SDLOG_MODE`) will not take into affect. And the `logger` module won't behave as in normal PX4 Vehicles (You can't manually start logging via `logger on` for example).
 
 More Info : The `/fs/microsd` you can view in the MavLink console is not the actual SD card, but another Memory located inside the drone.
 
